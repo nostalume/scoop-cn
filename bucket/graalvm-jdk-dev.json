@@ -1,10 +1,10 @@
 {
     "description": "High-performance, embeddable, polyglot Virtual Machine for JVM-langs (Java, Scala, Kotlin), JavaScript/NodeJS, Python, Ruby, R, and LLVM-langs (C, C++, Rust)",
-    "version": "25.0.2",
+    "version": "25.2.4-dev-20260702_0119",
     "homepage": "https://www.graalvm.org/",
     "license": "GPL-2.0",
-    "url": "https://gh-proxy.org/https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-25.0.2/graalvm-community-jdk-25.0.2_windows-x64_bin.zip",
-    "hash": "72edc27ce2dd3c156332144a339c97995745cae291205ed2f9b5cc26aa9cb422",
+    "url": "https://gh-proxy.org/https://github.com/graalvm/graalvm-ce-dev-builds/releases/download/25.2.4-dev-20260702_0119/graalvm-community-dev-windows-amd64.zip",
+    "hash": "55a7427c8498d527c2ce8155dc5206dd32e642389dfc3229f266e1a9fb120abc",
     "extract_to": "tmp",
     "installer": {
         "script": [
@@ -18,13 +18,11 @@
         "GRAALVM_HOME": "$dir"
     },
     "checkver": {
-        "url": "https://github.com/graalvm/graalvm-ce-builds/releases/latest",
-        "regex": "jdk-(25[\\d.]*)"
+        "github": "https://github.com/graalvm/graalvm-ce-dev-builds",
+        "jsonpath": "$.tag_name",
+        "regex": "([\\d.]+-dev-\\d{8}_\\d{4})"
     },
     "autoupdate": {
-        "url": "https://gh-proxy.org/https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-$version/graalvm-community-jdk-$version_windows-x64_bin.zip",
-        "hash": {
-            "url": "$url.sha256"
-        }
+        "url": "https://gh-proxy.org/https://github.com/graalvm/graalvm-ce-dev-builds/releases/download/$version/graalvm-community-dev-windows-amd64.zip"
     }
 }
