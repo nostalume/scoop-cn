@@ -13,9 +13,9 @@
         # charmbracelet
         "charmbracelet/scoop-bucket",
         # My repo
-        "lvyuemeng/winspec",
-        "lvyuemeng/spx",
-        "lvyuemeng/shed"
+        "nostalume/winspec",
+        "nostalume/spx",
+        "nostalume/shed"
     )
 
     proxies      = @{
