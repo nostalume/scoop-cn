@@ -1,10 +1,10 @@
 {
-  "version": "0.5.2",
+  "version": "0.5.4",
   "description": "A composable, declarative Windows configuration system",
   "homepage": "https://github.com/lvyuemeng/winspec",
   "license": "MIT",
-  "url": "https://gh-proxy.org/https://github.com/lvyuemeng/winspec/archive/refs/tags/v0.5.2.zip",
-  "extract_dir": "winspec-0.5.2",
+  "url": "https://gh-proxy.org/https://github.com/lvyuemeng/winspec/archive/refs/tags/v0.5.4.zip",
+  "extract_dir": "winspec-0.5.4",
   "bin": "winspec/winspec.ps1",
   "checkver": "github",
   "autoupdate": {
