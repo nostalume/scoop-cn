@@ -1,17 +1,14 @@
 {
-    "version": "14.0.22.0",
-    "description": "An Android emulator optimized for mobile gaming with lower resource consumption",
+    "version": "9.5.32.0",
+    "description": "An Android emulator optimized for mobile gaming with lower resource consumption (Version 9).",
     "homepage": "https://www.ldplayer.net",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.ldplayer.net/other/terms-of-use.html"
     },
-    "notes": [
-        "Administrator privileges are required to run repairer.",
-        "For LDPlayer 5, use `versions/ldplayer5`; for LDPlayer 9, use `versions/ldplayer9`."
-    ],
-    "url": "https://static.ldrescdn.com/download/package/LDPlayer_14.0.22.0.exe",
-    "hash": "f351d39360a2be22274123d139c68108020aafa8276f8533cab7f0e6686354dc",
+    "notes": "Administrator privileges are required to run repairer.",
+    "url": "https://static.ldrescdn.com/download/package/LDPlayer_9.5.32.0.exe",
+    "hash": "7f5e639fb8fb58c68c626ef58beb0cf329d02e2eea504aac488b1afccef37e62",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\$fname\" \"$dir\\installer\" -Switches \"-t#\" -Removal",
@@ -24,15 +21,15 @@
     "shortcuts": [
         [
             "dnplayer.exe",
-            "LDPlayer\\LDPlayer"
+            "LDPlayer\\LDPlayer9"
         ],
         [
             "dnmultiplayer.exe",
-            "LDPlayer\\LDMultiPlayer"
+            "LDPlayer\\LDMultiPlayer9"
         ],
         [
             "dnrepairer.exe",
-            "LDPlayer\\LDPlayer Repairer"
+            "LDPlayer\\LDPlayer9 Repairer"
         ]
     ],
     "uninstaller": {
@@ -44,7 +41,7 @@
     ],
     "checkver": {
         "url": "https://www.ldplayer.net/other/version-history-and-release-notes.html",
-        "regex": "download/package/LDPlayer_([\\d.]+)\\.exe"
+        "regex": "download/package/LDPlayer_(9[\\d.]+)\\.exe"
     },
     "autoupdate": {
         "url": "https://static.ldrescdn.com/download/package/LDPlayer_$version.exe"
